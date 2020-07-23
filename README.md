@@ -2,7 +2,7 @@
 This is an example repo that illustrates the concept of predictive maintainance through remaining useful life estimation. A deep convolution neural network is trained using a subset of the [C-MAPSS](http://tiarcnasagov/project/prognostic-data-repository) dataset. This implementation utilized a threshold approach to define the engine pre-degradation cycle (R_early) when the engine is assumed to operate in a normal state. This implementation also uses selected sensor readings, as opposed to other implementation that used the whole dataset for model training. 
 
 ## Dataset
-The dataset (Train_data.csv) is a cleaned version of train_FD001 subset in the C-MAPSS dataset. The test dataset(Test_engine_21.csv) is a subset of the C-MAPSS dataset containing engine number 21 sensor readings. Data cleaning is done by removing features that does not provide useful (and non-i.i.d) information from the dataset. This is done to move the implementation closer to real-world scenario.
+The dataset (Train_data.csv) is a cleaned version of train_FD001 subset in the C-MAPSS dataset. The test dataset (Test_engine_21.csv) is a subset of the C-MAPSS dataset containing engine number 21 sensor readings. Data cleaning is done by removing features that does not provide useful (and non-i.i.d) information from the dataset. This is done to move the implementation closer to real-world scenario.
 
 
 ## Model
