@@ -5,7 +5,7 @@ columns=["id","cycle","op1","op2","op3","sensor1","sensor2","sensor3",      "sen
          "sensor9","sensor10","sensor11","sensor12","sensor13","sensor14","sensor15","sensor16","sensor17","sensor18","sensor19"
          ,"sensor20","sensor21","sensor22","sensor23"]
 
-cycle=125 #Assumed cycle after which the engine starts degrading
+cycle=125 #Assumed cycle after which the engine starts degrading. Used for creating the R_early column
 
 def train_data_cleaner(train):
     train['remaining_cycle'] = train.groupby(['id'])['cycle'].transform(max)-train['cycle']
@@ -14,7 +14,7 @@ def train_data_cleaner(train):
     return train_x
 
 
-def train_data_cleaner_R_ectified(train):
+def train_data_cleaner_R_early(train):
     train['remaining_cycle'] = train.groupby(['id'])['cycle'].transform(max)-train['cycle']
     df_train['R_early'] = train['remaining_cycle'].apply(lambda x: cycle if x >= cycle else x)
     train_x=df_train.drop(["id","cycle","op1","op2","op3","sensor1","sensor5","sensor6",
@@ -38,7 +38,7 @@ def test_data_cleaner(test_results,test):
     return test_x
 
 
-def test_data_cleaner_R_ectified(test_results,test):
+def test_data_cleaner_R_early(test_results,test):
     test_results.columns=["rul","null"]
     test_results.drop(["null"],axis=1,inplace=True)
     test_results['id']=test_results.index+1
