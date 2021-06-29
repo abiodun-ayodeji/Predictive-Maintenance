@@ -11,7 +11,7 @@ The RUL estimator has 4 convolutional hidden layers with varying filters and a k
 ## Usage
 You may load the model checkpoint and predict the RUL directly or preprocess and train a new model using the codes in the CMAPSS data cleaner and the steps shown in the notebook.
 
-If you like the example in this notebook, you will also like a new architecture proposed in [this paper](https://www.researchgate.net/publication/351693960_Causal_augmented_ConvNet_A_temporal_memory_dilated_convolution_model_for_long-sequence_time_series_prediction). It gives a state-of-the-art prediction, and can be used for other time-series prediction tasks. An adaptation of the code used in the paper is presented [here](https://github.com/abiodun-ayodeji/CaConvNet_for_time_series) 
+If you like the example in this notebook, you will also like a new architecture proposed in [this paper](https://www.researchgate.net/publication/351693960_Causal_augmented_ConvNet_A_temporal_memory_dilated_convolution_model_for_long-sequence_time_series_prediction). It gives a state-of-the-art prediction, and can be used for other time-series prediction tasks. An adaptation of the code used in the paper is presented [here](https://github.com/abiodun-ayodeji/CaConvNet_for_time_series). 
 
 ## Links:
 1. A. Ayodeji et al, "Causal augmented ConvNet: A temporal memory dilated convolution model for long-sequence time series prediction", ISA Transactions, 2021 (in press).
