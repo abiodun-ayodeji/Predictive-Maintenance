@@ -9,7 +9,7 @@ The dataset (Train_data.csv) is a cleaned version of train_FD001 subset in the C
 The RUL estimator has 4 convolutional hidden layers with varying filters and a kernel size of 3. It also uses a Globalmaxpooling layer and dropout layers stacked as shown in the notebook. The output is a single-unit Dense layer. Relu activation is used on all convolutional layers while the fully connected layer and the output activation is linear. 
 
 ## Usage
-You may load the model checkpoint and predict the RUL directly or preprocess and train a new model using the codes in the CMAPSS data cleaner and the steps shown in the notebook.
+You may load the model checkpoint and predict the RUL directly or preprocess and train a new model using the functions in the CMAPSS data cleaner and the steps shown in the notebook.
 
 If you like the example in this notebook, you will also like a new architecture proposed in [this paper](https://www.researchgate.net/publication/351693960_Causal_augmented_ConvNet_A_temporal_memory_dilated_convolution_model_for_long-sequence_time_series_prediction). It gives a state-of-the-art prediction, and can be used for other time-series prediction tasks. An adaptation of the code used in the paper is presented [here](https://github.com/abiodun-ayodeji/CaConvNet_for_time_series). 
 
