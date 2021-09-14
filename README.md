@@ -14,6 +14,6 @@ You may load the model checkpoint and predict the RUL directly or preprocess and
 If you like the example in this notebook, you will also like a new architecture proposed in [this paper](https://www.researchgate.net/publication/351693960_Causal_augmented_ConvNet_A_temporal_memory_dilated_convolution_model_for_long-sequence_time_series_prediction). It gives a state-of-the-art prediction, and can be used for other time-series prediction tasks. An adaptation of the code used in the paper is presented [here](https://github.com/abiodun-ayodeji/CaConvNet_for_time_series). 
 
 ## Links:
-1. A. Ayodeji et al, "Causal augmented ConvNet: A temporal memory dilated convolution model for long-sequence time series prediction", ISA Transactions, 2021 (in press).
+1. A. Ayodeji et al, "Causal augmented ConvNet: A temporal memory dilated convolution model for long-sequence time series prediction", ISA Transactions, 2021.
 2. O. Heimes, "Recurrent neural networks for remaining useful life estimation", International Conference on Prognostics and Health Management, pp. 1-6, 2008.
 3. Li X, et al., "Remaining useful life estimation in prognostics using deep convolution neural networks" Reliability Engineering and System Safety pp.1-11, 2018. 
