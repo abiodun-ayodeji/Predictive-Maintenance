@@ -1,4 +1,4 @@
-# Deep Convolutional Neural Network for Remaining Useful Life Prediction 
+# Deep Convolution Neural Network for Remaining Useful Life Prediction 
 This is an example repo that illustrates the concept of predictive maintainance through remaining useful life estimation. A deep convolution neural network is trained using a subset of the [C-MAPSS](https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/) dataset. This implementation utilized a threshold approach (called piecewise linear RUL) to define the engine pre-degradation cycle (R_early) when the engine is assumed to operate in a normal state. This implementation also uses selected sensor readings, as opposed to other implementation that used the whole dataset for model training. 
 
 ## Dataset
